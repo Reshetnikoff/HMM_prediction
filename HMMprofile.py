@@ -17,13 +17,13 @@ import collections
 from pomegranate import *
 
 
-HMM_file = "./db/Pfam-A.hmm"
-pfam_file = "./PfamDomainsInfo.csv"
-domain = "PF00141"
-data_path = "./new_data/"
-pheno = "./new_pheno/"
-file_annotation = "AL123456_rev.gff"
-file_reference = 'h37rv.fasta'
+HMM_file = "../db/Pfam-A.hmm"
+pfam_file = "../db/PfamDomainsInfo.csv"
+data_path = "../new_data/"
+pheno = "../new_pheno/"
+file_annotation = "../db/AL123456_rev.gff"
+file_reference = '../db/h37rv.fasta'
+GENE_FILE = "./genes.csv"
 NUM_THREADS = 30
 
 
@@ -177,8 +177,8 @@ class profileHMM():
 
             Iii = State(DiscreteDistribution({x : y for (x, y) in zip(self.amino_acids, self.emission_prob_ins[i])}))
             Mii = State(DiscreteDistribution({x : y for (x, y) in zip(self.amino_acids, self.emission_prob_match[i])}))
-            Dii = State(DiscreteDistribution(None)
-
+            Dii = State(None)
+            
             model.add_states(Iii, Mii, Dii)
 
             model.add_transition(Mi, Mii, self.m_trans_prob[i-1][0])
@@ -220,7 +220,8 @@ def round_num(arr):
 
 def change_seq(seq, data, diff=0):
     shift = 0
-    for (gene, name, pos, ind1, ind2, act) in data.values:
+    len_seq = len(seq)
+    for (gene, pos, ind1, ind2, act) in data.values:
         pos = pos - diff + 1
         if act == "snp":
             if pos+shift >= len(seq):
@@ -232,17 +233,24 @@ def change_seq(seq, data, diff=0):
             # такого if по идее не должно произойти
             if pos+shift-1 >= len(seq):
                 continue
-            seq = seq[:pos-1+shift] + ind2 + seq[pos-1+shift:]
-            shift += len(ind2)
+            seq = seq[:pos-1+shift] + ind2 + seq[pos+shift:]
+            shift += len(ind2) - 1
         if act == "del":
             if pos-1+len(ind1)+shift >= len(seq):
                 continue
-            seq = seq[:pos-1+shift] + seq[pos-1+len(ind1)+shift:]
-            shift -= len(ind1)
+            seq = seq[:pos+shift] + seq[pos-1+len(ind1)+shift:]
+            shift -= len(ind1) - 1
+        if ind1 == "left_clip":
+            shift -= pos
+            seq = seq[pos:]
+        if ind2 == "right_clip":
+            ind1 = int(ind1)
+            seq = seq[:pos-1]
+        if ind2 == "right_extension":
+            seq = seq[:pos-1] + ind1[:len_seq-pos+1]
+        if ind2 == "left_extension":
+            seq = ind1[-pos:] + seq[pos:]
     return seq
-
-
-
 
 def delete_last_space(s):
     if s[-1] == " ":
@@ -375,13 +383,13 @@ def get_batches(arr, n):
 if __name__ == "__main__":
     # Костыль
     samples_ind = sys.argv[1]
-    samples_list = f"sample_batches/{samples_ind}.csv"
+    samples_list = f"./sample_batches/{samples_ind}.csv"
     print(samples_list)
-    output = f"HMM_output/{samples_ind}/"
+    output = f"./HMM_output/{samples_ind}/"
 
 
     start_time = time.time()
-    f = open("Genes.csv", 'r')
+    f = open(GENE_FILE, 'r')
     genes = [x[:-1] for x in f.readlines()][:-1]    
     f.close()
    
@@ -389,17 +397,18 @@ if __name__ == "__main__":
     annotation = get_annotation(file_annotation)
     reference = get_reference(file_reference)
     pfam = get_pfam(pfam_file)
-	
+
     domains = np.unique([x.split("_")[0] for x in pfam['domain']])
 
     HMMmodels = []
     print("Create HMM profiles")
-    pool = multiprocessing.Pool(NUM_THREADS)
-    results = pool.map(get_HMM_profile, get_batches(domains, NUM_THREADS))
-    for value in results:
-        HMMmodels.extend(value)
-    pool.close()
-    pool.join()
+    get_HMM_profile(domains)
+    # pool = multiprocessing.Pool(NUM_THREADS)
+    # results = pool.map(get_HMM_profile, get_batches(domains, NUM_THREADS))
+    # for value in results:
+    #     HMMmodels.extend(value)
+    # pool.close()
+    # pool.join()
     print("HMM profiles have created!")
     print("--- %s seconds ---" % (time.time() - start_time))
 
@@ -420,7 +429,7 @@ if __name__ == "__main__":
                f"{data_path}{sample_file}",
 
                sep='\t', header=None, index_col=None,
-               names=['name', 'gene', 'pos', "ind1", "ind2", "act"],
+               names=['gene', 'pos', "ind1", "ind2", "act"],
                )
         data.append(temp_data)
 
