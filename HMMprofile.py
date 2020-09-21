@@ -227,19 +227,22 @@ def change_seq(seq, data, diff=0):
             if pos+shift >= len(seq):
                 seq = seq[:pos-1+shift] + ind2
             else:
-                seq = seq[:pos-1+shift] + ind2 + seq[pos+shift:]
+                if ind2 == "-":
+                    seq = seq[:pos-1+shift] + seq[pos+shift:]
+                else:
+                    seq = seq[:pos-1+shift] + ind2 + seq[pos+shift:]
         if act == "ins":
             # интересная вещь с этой вставкой - ограничиться длиной или нет? - открытый вопрос
             # такого if по идее не должно произойти
             if pos+shift-1 >= len(seq):
                 continue
-            seq = seq[:pos-1+shift] + ind2 + seq[pos+shift:]
-            shift += len(ind2) - 1
+            seq = seq[:pos-1+shift] + ind2 + seq[pos-1+shift:]
+            shift += len(ind2)
         if act == "del":
             if pos-1+len(ind1)+shift >= len(seq):
                 continue
-            seq = seq[:pos+shift] + seq[pos-1+len(ind1)+shift:]
-            shift -= len(ind1) - 1
+            seq = seq[:pos-1+shift] + seq[pos-1+len(ind1)+shift:]
+            shift -= len(ind1)
         if ind1 == "left_clip":
             shift -= pos
             seq = seq[pos:]
