@@ -335,7 +335,6 @@ def get_score(genes):
             gene_data = gene_data[gene_data["pos"] != "changed"]
             gene_data = gene_data[gene_data["pos"] != "broken"]
             gene_data = gene_data.astype({"pos" : np.int32})
-            gene_data = gene_data.dropna(axis='index', how='any', subset=['act'])
             gene_data.sort_values(by="pos", axis=0, inplace=True)
 
             for (domain, end, gene, start) in domains.values:
@@ -433,6 +432,7 @@ if __name__ == "__main__":
 
                sep='\t', header=None, index_col=None,
                names=['gene', 'pos', "ind1", "ind2", "act"],
+               keep_default_na=False, na_values=['']
                )
         data.append(temp_data)
 
