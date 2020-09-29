@@ -67,7 +67,7 @@ if __name__ == "__main__":
     for sample_file in samples_list:
         temp_data = pd.read_csv(
 
-            f"{data_path}{sample_file}",
+            f"{data_path}/{sample_file}",
 
             sep='\t', header=None, index_col=None,
             names=['gene', 'pos', "ind1", "ind2", "act"],
@@ -86,5 +86,5 @@ if __name__ == "__main__":
 
     for proc in procs:
         proc.join()
-    print(f"List of samples: {samples_list} is processed")
+    print(f"List of samples: {data_path}/{sample_file} is processed and write in ./HMM_output/{samples_file}")
     print("--- %s seconds ---" % (time.time() - start_time))
