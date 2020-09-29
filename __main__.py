@@ -1,4 +1,5 @@
 import sys
+import os
 import time
 from multiprocessing import Process, Pool
 
@@ -19,8 +20,8 @@ if __name__ == "__main__":
     start_time = time.time()
 
     # Get input_file
-    samples_file = sys.argv[1]
-    samples_file = f"./sample_batches/{samples_file}"
+    samples_name = sys.argv[1]
+    samples_file = f"./sample_batches/{samples_name}"
     output = f"./HMM_output/{samples_file}/"
 
     samples_list = pd.read_csv(
@@ -33,6 +34,13 @@ if __name__ == "__main__":
         names=["samples"]
     )
     samples_list = samples_list.to_numpy()
+
+    # Config output
+    output = f"./HMM_output/{samples_name.split('.')[0]}"
+    try:
+        os.makedirs(output)
+    except FileExistsError:
+        pass
 
     # Get support files block
     f = open(gene_file, 'r')
@@ -80,7 +88,7 @@ if __name__ == "__main__":
     procs = []
     for batch in get_batches(genes, NUM_THREADS):
         proc = Process(target=get_score, args=(batch, pfam, annotation, reference,
-                                               samples_data, HMMmodels, "./output"))
+                                               samples_data, HMMmodels, output))
         procs.append(proc)
         proc.start()
 
