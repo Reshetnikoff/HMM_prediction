@@ -32,6 +32,7 @@ def get_score(genes, pfam, annotation, reference, drugs, HMMmodels, output):
             wild_pred = model.predict(domain_seq)
             preds = preds.append({"name": f"{gene}_{domain}", "pred": wild_pred, "sample": "wild"}, ignore_index=True)
 
+
         for (sample, sample_data) in zip(drugs.samples, drugs.data):
             gene_data = sample_data[sample_data['gene'] == gene]
             gene_data = gene_data[gene_data["pos"] != "changed"]
@@ -39,7 +40,19 @@ def get_score(genes, pfam, annotation, reference, drugs, HMMmodels, output):
             gene_data = gene_data.astype({"pos": np.int32})
             gene_data.sort_values(by="pos", axis=0, inplace=True)
 
+
             for (domain, end, gene, start) in domains.values:
+                left_gene_data = gene_data[gene_data['ind1'] == 'left_clip']
+                right_gene_data = gene_data[gene_data['ind2'] == 'right_clip']
+
+                left_gene_data = left_gene_data[left_gene_data['pos'] >= end]
+                right_gene_data = right_gene_data[right_gene_data['pos'] <= start]
+                if len(left_gene_data) > 0 or len(right_gene_data) > 0:
+                    preds = preds.append({"name": f"{gene}_{domain}", "pred": -np.inf, "sample": sample},
+                                         ignore_index=True)
+                    continue
+
+
                 domain_data = gene_data[gene_data['pos'] >= int(start)]
                 domain_data = domain_data[gene_data['pos'] <= int(end)]
                 if len(domain_data) == 0:
@@ -105,8 +118,8 @@ def change_seq(seq, data, diff=0):
         if act == "del":
             if pos-1+len(ind1)+shift >= len(seq):
                 continue
-            seq = seq[:pos-1+shift] + seq[pos-1+len(ind1)+shift:]
-            shift -= len(ind1)
+            seq = seq[:pos+shift] + seq[pos-1+len(ind1)+shift:]
+            shift -= len(ind1) + 1
         if ind1 == "left_clip":
             shift -= pos
             seq = seq[pos:]
