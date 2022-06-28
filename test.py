@@ -13,14 +13,20 @@ from utils import get_annotation, get_reference, get_pfam, get_HMM_profile
 from utils import get_batches
 
 from config import file_annotation, file_reference, pfam_file, gene_file
-from config import data_path
+from config import data_path, output_path
 
 
 if __name__ == "__main__":
     start_time = time.time()
+    
+    try:
+        os.makedirs(output_path)
+    except FileExistsError:
+        pass
 
     # Get support files block
     samples_list = os.listdir(data_path)
+    
     f = open(gene_file, 'r')
     genes = [x[:-1] for x in f.readlines()][:-1]
     f.close()
@@ -52,7 +58,7 @@ if __name__ == "__main__":
 
             sep='\t', header=None, index_col=None,
             names=['gene', 'pos', "ind1", "ind2", "act"],
-            keep_default_na=False, na_values=['']
+            keep_default_na=False, na_values=[''], usecols=[0, 1, 2, 3, 4]
         )
         data.append(temp_data)
     drug_data = drug(samples=samples_list, data=data)
@@ -60,7 +66,7 @@ if __name__ == "__main__":
 
     # Process data
     print("Process data...")
-    get_score(["katG"], pfam, annotation, reference, drug_data, HMMmodels, "./output")
+    get_score(["katG"], pfam, annotation, reference, drug_data, HMMmodels, output_path)
     print("Data have been processed")
 
     print("--- %s seconds ---" % (time.time() - start_time))

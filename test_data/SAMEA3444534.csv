@@ -1,0 +1,673 @@
+Rv2956	-62	C	T	snp
+Rv2962c	154	G	G	syn	GGA
+pca	641	L	H	snp	CAC
+gpdA2	133	P	A	snp	GCG
+lppY	212	M	L	snp	TTG
+cfp6	-10	T	C	snp
+gatB	343	G	G	syn	GGT
+ligB	91	P	S	snp	TCG
+cstA	142	L	L	syn	TTG
+cstA	559	R	S	snp	AGT
+atsF	308	R	R	syn	CGG
+atsF	310	G	R	snp	CGC
+tgs4	287	E	G	snp	GGA
+fadD13	302	A	A	syn	GCG
+Rv3093c	210	C	W	snp	TGG
+cyp141	157	K	E	snp	GAA
+Rv3137	168	P	L	snp	CTG
+nuoG	604	T	A	snp	GCG
+nuoI	102	D	N	snp	AAC
+Rv3190c	263	T	T	syn	ACG
+Rv3190c	295	L	F	snp	TTC
+Rv3193c	636	V	V	syn	GTG
+lipV	1	left_clip
+Rv3204	34	T	A	snp	GCA
+moeB1	194	1	del
+Rv3213c	144	K	E	snp	GAG
+gpm2	107	L	V	snp	GTG
+Rv3228	1	left_clip
+Rv3228	32	A	A	syn	GCC
+desA3	193	D	N	snp	AAC
+Rv3238c	90	L	P	snp	CCG
+Rv3243c	217	V	V	syn	GTG
+mtrA	113	V	V	syn	GTC
+Rv3271c	108	T	M	snp	ATG
+birA	78	A	A	syn	GCA
+sseA	116	H	H	syn	CAT
+lat	-25	C	A	snp
+glpD2	-81	C	A	snp
+lpdA	472	22	right_clip
+amiB1	36	F	L	snp	TTG
+add	277	V	F	snp	TTC
+sdhD	54	V	L	snp	CTG
+sigJ	41	P	Q	snp	CAG
+sugI	423	P	L	snp	CTG
+Rv3335c	265	G	G	syn	GGG
+PPE54	103	E	A	snp	GCG
+PPE54	2139	T	T	syn	ACC
+PPE54	2157	I	T	snp	ACC
+acrA1	46	G	S	snp	AGC
+acrA1	317	T	N	snp	AAC
+Rv3399	330	A	E	snp	GAG
+Rv3401	17	T	T	syn	ACT
+Rv3403c	235	V	V	syn	GTA
+vapC47	46	S	L	snp	TTG
+Rv3415c	143	L	L	syn	CTT
+rimI	64	A	A	syn	GCC
+Rv3434c	-48	G	T	snp
+Rv3435c	273	W	L	snp	TTG
+Rv3440c	28	E	E	syn	GAA
+rplM	-85	GT	G	del
+Rv3446c	159	T	A	snp	GCG
+eccC4	867	D	G	snp	GGC
+rplQ	4	P	P	syn	CCC
+Rv3466	34	P	P	syn	CCG
+Rv3467	315	K	E	snp	GAA
+Rv3475	broken
+kgtP	350	V	V	syn	GTC
+PPE60	1	left_clip
+PPE60	3	D	D	syn	GAC
+PPE60	56	G	G	syn	GGA
+PPE60	116	T	A	snp	GCT
+PPE60	122	T	I	snp	ATA
+PPE60	131	T	T	syn	ACC
+Rv3479	174	L	R	snp	CGC
+Rv3479	863	A	A	syn	GCG
+mce4A	82	L	L	syn	CTT
+Rv3510c	30	S	P	snp	CCT
+echA19	86	G	D	snp	GAC
+ltp4	324	T	I	snp	ATC
+PPE61	28	1	del
+hsd4B	128	A	A	syn	GCA
+PPE63	137	A	V	snp	GTC
+Rv3552	1	left_clip
+Rv3552	25	S	G	snp	GGC
+PPE64	broken
+hsaB	71	C	C	syn	TGT
+ispF	1	left_clip
+ispF	25	V	V	syn	GTG
+ispD	86	T	T	syn	ACT
+radA	152	Q	Q	syn	CAA
+PE_PGRS58	18	V	G	snp	GGG
+lpqF	159	A	V	snp	GTG
+Rv3611	1	left_clip
+Rv3611	34	N	S	snp	AGC
+espA	192	T	I	snp	ATC
+Rv3626c	116	V	V	syn	GTA
+Rv3631	227	V	I	snp	ATC
+Rv3632	-44	C	T	snp
+Rv3651	20	R	W	snp	TGG
+Rv3654c	39	left_clip
+Rv3654c	-89	TC	T	del
+Rv3655c	100	26	right_clip
+acs	214	E	A	snp	GCG
+Rv3669	1	left_clip
+Rv3669	24	A	V	snp	GTC
+Rv3669	159	V	V	syn	GTC
+ephE	-43	C	G	snp
+Rv3671c	307	A	A	syn	GCT
+Rv3673c	-28	A	G	snp
+nth	237	D	G	snp	GGT
+Rv3684	290	A	A	syn	GCT
+dnaQ	211	V	L	snp	TTG
+cobQ2	39	E	E	syn	GAA
+Rv3718c	-81	T	C	snp
+Rv3719	12	T	A	snp	GCG
+Rv3719	264	A	A	syn	GCA
+Rv3736	284	A	A	syn	GCC
+Rv3737	40	D	G	snp	GGT
+proV	-24	T	C	snp
+proX	311	H	H	syn	CAC
+tcrY	246	C	R	snp	CGT
+Rv3776	134	L	L	syn	CTG
+Rv3776	329	M	V	snp	GTG
+Rv3777	63	L	L	syn	CTG
+epiB	broken
+embC	927	R	R	syn	CGT
+embB	1073	A	A	syn	GCG
+glf	341	T	T	syn	ACT
+Rv3816c	135	A	G	snp	GGC
+Rv3831	133	S	S	syn	AGT
+Rv3832c	139	P	L	snp	CTG
+Rv3856c	179	G	W	snp	TGG
+whiB6	-76	AG	A	del
+eccCb1	80	I	V	snp	GTC
+PE35	99	1	right_clip
+PPE68	-36	C	A	snp
+eccD1	368	L	L	syn	CTC
+espK	247	left_clip
+eccE1	102	L	L	syn	CTC
+mycP1	-55	T	C	snp
+eccA2	189	A	A	syn	GCG
+PPE69	292	108	right_clip
+PPE69	19	T	K	snp	AAG
+PPE69	290	G	E	snp	GAG
+PPE69	291	A	A	syn	GCG
+eccC2	broken
+Rv3896c	193	Q	K	snp	AAA
+Rv3896c	266	A	A	syn	GCG
+Rv3897c	166	APAVPNGQPVKGRLTVPPSVPVKSADDKPVVTKSTRRILVVPNDDKVKE	right_extension
+Rv3906c	1	left_clip
+Rv3906c	10	G	R	snp	CGC
+Rv3910	482	V	V	syn	GTA
+sigM	160	63	right_clip
+cwlM	218	A	T	snp	ACA
+parB	218	A	S	snp	TCC
+parA	-59	G	A	snp
+gid	205	A	T	snp	ACA
+Rv2456c	175	left_clip
+mmuM	125	Y	C	snp	TGC
+Rv2466c	broken
+gdh	1043	S	G	snp	GGC
+Rv2481c	-54	T	C	snp
+plsB2	778	C	R	snp	CGC
+echA14	80	E	A	snp	GCG
+Rv2488c	855	P	P	syn	CCA
+bkdC	107	T	A	snp	GCC
+scoB	97	G	G	syn	GGC
+Rv2513	122	T	K	snp	AAG
+adi	841	A	A	syn	GCC
+Rv2542	211	T	A	snp	GCC
+Rv2542	251	V	V	syn	GTC
+Rv2566	610	L	P	snp	CCC
+Rv2566	1087	A	A	syn	GCC
+Rv2567	491	G	G	syn	GGT
+Rv2567	645	Q	R	snp	CGG
+Rv2567	792	E	K	snp	AAA
+Rv2569c	67	S	S	syn	AGT
+Rv2570	67	G	R	snp	AGG
+Rv2574	140	P	P	syn	CCG
+apt	147	A	E	snp	GAG
+Rv2585c	128	A	A	syn	GCC
+Rv2585c	462	C	S	snp	TCT
+secD	524	L	L	syn	CTT
+ruvB	281	P	P	syn	CCG
+Rv2600	-51	A	G	snp
+PPE42	192	left_clip
+Rv2611c	102	I	M	snp	ATG
+Rv2611c	197	S	C	snp	TGT
+Rv2625c	broken
+Rv2627c	104	R	G	snp	GGA
+Rv2633c	65	T	A	snp	GCG
+Rv2650c	101	I	T	snp	ACC
+Rv2652c	1	left_clip
+Rv2652c	7	A	T	snp	ACC
+Rv2652c	-40	A	G	snp
+Rv2653c	106	K	E	snp	GAA
+Rv2668	23	left_clip
+Rv2688c	86	W	S	snp	TCG
+Rv2690c	472	A	A	syn	GCG
+Rv2690c	604	V	M	snp	ATG
+ppgK	203	I	T	snp	ACA
+sthA	319	A	A	syn	GCT
+PE_PGRS47	56	G	G	syn	GGG
+PE_PGRS47	136	G	G	syn	GGG
+hsdS	236	K	K	syn	AAG
+Rv2771c	80	L	P	snp	CCC
+fadE21	269	G	S	snp	AGC
+pptT	87	M	V	snp	GTG
+Rv2822c	6	D	G	snp	GGC
+Rv2822c	41	Q	P	snp	CCG
+vapC22	-46	C	T	snp
+vapB22	56	A	V	snp	GTG
+echA16	73	Q	P	snp	CCG
+proS	225	R	R	syn	AGG
+aldC	60	Q	H	snp	CAC
+relG	1	left_clip
+relG	21	R	R	syn	CGA
+dipZ	672	Y	D	snp	GAT
+merT	244	A	S	snp	TCC
+mpt53	53	P	P	syn	CCT
+Rv2896c	79	1	del
+trmD	-73	C	T	snp
+rimM	154	V	V	syn	GTT
+Rv2913c	493	P	S	snp	TCG
+ffh	35	R	R	syn	CGG
+Rv2917	594	R	L	snp	CTG
+amt	105	Q	Q	syn	CAA
+ppsA	broken
+ppsB	827	E	E	syn	GAA
+ppsE	615	A	A	syn	GCG
+ppsE	851	R	R	syn	CGA
+ppsE	1016	Q	Q	syn	CAG
+drrB	61	V	V	syn	GTC
+pks15	333	V	A	snp	GCG
+Rv2955c	-61	C	T	snp
+mce3C	broken
+mce3D	83	Y	Y	syn	TAT
+mce3F	396	A	E	snp	GAG
+Rv1977	253	S	S	syn	TCG
+ctpF	298	T	A	snp	GCC
+Rv1999c	251	P	S	snp	TCG
+otsB1	-3	T	C	snp
+Rv2017	262	A	E	snp	GAG
+Rv2024c	47	W	R	snp	CGG
+Rv2024c	154	D	G	snp	GGC
+Rv2025c	168	R	K	snp	AAG
+Rv2026c	22	A	V	snp	GTG
+Rv2037c	312	C	Y	snp	TAT
+Rv2039c	131	V	F	snp	TTC
+Rv2041c	242	D	D	syn	GAC
+pks12	2250	A	A	syn	GCC
+pks12	3649	P	A	snp	GCG
+cobN	554	F	L	snp	TTA
+Rv2079	47	Y	C	snp	TGC
+Rv2082	638	P	R	snp	CGC
+Rv2083	256	L	V	snp	GTG
+helZ	601	P	Q	snp	CAG
+Rv2119	143	Y	C	snp	TGC
+Rv2125	1	left_clip
+Rv2125	33	G	S	snp	AGC
+murD	247	R	G	snp	GGG
+PE_PGRS38	-87	T	C	snp
+ephD	288	Q	Q	syn	CAA
+Rv2226	299	D	N	snp	AAT
+Rv2235	128	V	M	snp	ATG
+Rv2237	78	P	P	syn	CCG
+Rv2242	305	R	G	snp	GGC
+accD6	200	D	D	syn	GAC
+Rv2250A	broken
+Rv2251	64	VQLRPSALSGADHDALARIVGTEYFRTADRDRLLHAGGKSTPDLLRRKDTGVQDAPDAVLLPGG	left_extension
+Rv2251	52	P	P	syn	CCC
+Rv2251	53	T	N	snp	AAC
+Rv2262c	332	PLFGWITRYSKAAAKDRQRGAGPVVLAVNSLHIAPLISYEMTFSDLTRHAARLGAALLVYQSSTSTFQGSWAQPQLAAQPAVRAVEAG	right_extension
+Rv2262c	329	-	V	ins
+Rv2262c	330	L	L	syn	CTG
+Rv2296	-8	T	G	snp
+Rv2305	94	R	R	syn	CGA
+Rv2314c	388	G	G	syn	GGC
+Rv2326c	516	N	N	syn	AAC
+lppP	1	left_clip
+lppP	10	-	ILA	ins
+lppP	11	L	L	syn	TTG
+Rv2336	160	left_clip
+Rv2337c	119	G	V	snp	GTC
+Rv2337c	347	T	A	snp	GCA
+mmpL9	766	T	T	syn	ACT
+esxO	-26	TTTA	T	del
+glyS	143	N	N	syn	AAT
+amiA2	126	A	A	syn	GCC
+mbtH	69	V	A	snp	GCC
+mbtE	1486	L	L	syn	CTT
+nadD	-44	A	C	snp
+Rv2423	305	RTCHRAPGRPPVGTPTGSVASTCSPPTLRAARSRCAGWCSRGGGEQSQKPPKPVGFGGWYVN	right_extension
+Rv2425c	57	V	V	syn	GTA
+Rv2435c	184	R	L	snp	CTG
+rbsK	282	V	A	snp	GCC
+rpfE	126	R	Q	snp	CAG
+galU	235	Q	R	snp	CGG
+metS	39	R	G	snp	GGC
+tatD	187	T	N	snp	AAC
+kdpD	368	P	S	snp	TCC
+kdpF	29	K	T	snp	ACG
+kdpA	-7	T	G	snp
+PE8	81	G	G	syn	GGG
+Rv1046c	172	SARLGRRSAAHRHSIARNARAIPFVV	right_extension
+glyA1	36	V	A	snp	GCA
+Rv1096	-18	A	G	snp
+Rv1125	299	A	A	syn	GCC
+Rv1132	142	K	K	syn	AAA
+Rv1154c	123	T	A	snp	GCG
+narI	145	A	T	snp	ACA
+Rv1179c	-40	T	TG	ins
+Rv1179c	-39	T	C	snp
+pks3	489	YTLSCRRAHRPVRTVVTASSFDELSAALRDVAGDQIPYQPAVGHDDRGPVWVFSGQGSQWP	right_extension
+pks4	217	A	A	syn	GCA
+pks4	-43	T	G	snp
+Rv1186c	207	P	A	snp	GCC
+esxK	3	S	S	syn	TCG
+esxK	-2	T	C	snp
+esxK	-4	GC	G	del
+htrA	-33	A	AC	ins
+Rv1230c	15	left_clip
+Rv1230c	45	S	G	snp	GGC
+Rv1232c	149	C	G	snp	GGC
+corA	139	K	E	snp	GAA
+Rv1249c	3	A	T	snp	ACT
+Rv1251c	773	T	T	syn	ACG
+Rv1257c	-47	G	A	snp
+Rv1258c	404	D	N	snp	AAT
+amiB2	260	V	V	syn	GTG
+pknH	607	R	Q	snp	CAG
+Rv1268c	206	T	M	snp	ATG
+cysN	521	P	P	syn	CCG
+hemK	194	R	C	snp	TGC
+Rv1320c	531	T	A	snp	GCG
+Rv1321	144	S	R	snp	CGC
+glgB	503	P	P	syn	CCA
+dinG	-85	G	C	snp
+pncB1	263	A	V	snp	GTC
+pncB1	429	G	A	snp	GCC
+irtB	297	L	V	snp	GTC
+Rv1352	101	S	S	syn	TCC
+Rv1364c	465	A	E	snp	GAG
+Rv1374c	broken
+Rv1378c	37	R	W	snp	TGG
+PPE20	177	L	P	snp	CCG
+Rv1393c	249	Y	D	snp	GAC
+nlhH	47	left_clip
+ribG	10	D	E	snp	GAA
+Rv1413	153	A	S	snp	TCA
+Rv1414	-49	C	A	snp
+Rv1431	473	L	L	syn	CTC
+Rv1435c	broken
+Rv1439c	43	R	T	snp	ACG
+Rv1453	405	P	Q	snp	CAA
+Rv1462	183	N	D	snp	GAC
+inhA	250	L	L	syn	CTA
+hemZ	-66	C	T	snp
+Rv1498c	191	R	H	snp	CAC
+Rv1502	213	Y	C	snp	TGC
+Rv1508c	328	G	G	syn	GGT
+Rv1508c	542	V	L	snp	CTA
+Rv1514c	159	S	S	syn	TCG
+pks5	121	T	I	snp	ATA
+glbN	broken
+PPE21	306	left_clip
+fadD11.1	11	MGRHGSRWSRP	left_extension
+frdA	524	S	S	syn	TCT
+frdC	40	M	V	snp	GTG
+bioD	191	M	T	snp	ACG
+Rv1588c	13	F	F	syn	TTC
+hisH	201	S	N	snp	AAC
+hisA	-29	C	T	snp
+tesB1	121	H	L	snp	CTC
+cydA	388	N	D	snp	GAC
+Rv1647	2	left_clip
+argG	214	V	G	snp	GGC
+pks8	1357	A	T	snp	ACC
+Rv1667c	-72	G	GCGCGGCAAGA	ins
+Rv1668c	348	RGKTVRLAVLDQHGDDLAPFADDRIADVLGRLRGGYQVEGREVTPTQLLERLGFRRDQLSARVDDLSGGQRRRLQLMLTLLSEPNVLLL	right_extension
+Rv1676	80	F	S	snp	TCT
+Rv1676	149	S	S	syn	AGC
+Rv1682	298	A	A	syn	GCC
+Rv1687c	81	A	V	snp	GTT
+tlyA	1	left_clip
+tlyA	11	L	L	syn	CTG
+cycA	93	R	L	snp	CTG
+cycA	432	-	TTET	ins
+Rv1716	276	1	right_clip
+Rv1717	-4	A	G	snp
+Rv1724c	95	K	K	syn	AAG
+Rv1739c	134	R	L	snp	CTA
+pknE	89	L	R	snp	CGC
+pknE	521	L	L	syn	TTG
+Rv1774	broken
+eccC5	1204	S	S	syn	AGC
+eccE5	56	T	T	syn	ACT
+PPE31	223	F	S	snp	TCC
+PPE33	155	A	A	syn	GCC
+PPE33	252	V	L	snp	TTG
+Rv1812c	1	left_clip
+Rv1812c	30	L	P	snp	CCA
+Rv1815	83	I	F	snp	TTC
+Rv1835c	236	E	G	snp	GGG
+Rv1835c	394	V	V	syn	GTC
+blaR	-18	T	C	snp
+blaI	138	T	T	syn	ACC
+adhA	-18	A	AC	ins
+Rv1867	380	G	G	syn	GGT
+Rv1867	407	W	S	snp	TCG
+lldD2	2	A	A	syn	GCA
+lldD2	-18	A	C	snp
+Rv1873	-5	A	C	snp
+Rv1873	-28	G	A	snp
+glnA3	283	L	L	syn	CTG
+lipJ	152	V	V	syn	GTC
+fadB5	188	A	T	snp	ACG
+Rv1913	77	S	L	snp	TTG
+PPE34	676	S	A	snp	GCA
+vapB35	1	left_clip
+vapB35	-2	G	A	snp
+Rv0461	171	LDLLGQADEHSTIRVGAVTHYDVVVLGAGPGGYVAAIRAAQLGLSTAIVEPKYWGG	right_extension
+Rv0461	170	G	G	syn	GGA
+lpdC	-52	TCCGACAACCGACTAGTACGGAATGACG	T	del
+Rv0465c	120	A	A	syn	GCT
+Rv0484c	180	G	G	syn	GGC
+regX3	-10	TCTCCCCCGCAAGCGGGTGGTGCCC	T	del
+regX3	-37	A	T	snp
+proC	118	A	A	syn	GCC
+Rv0500B	broken
+galE2	4	left_clip
+Rv0502	148	A	A	syn	GCT
+mmpL2	426	R	H	snp	CAC
+Rv0518	-68	A	C	snp
+ccdA	87	G	G	syn	GGT
+Rv0540	208	G	R	snp	AGG
+Rv0556	1	left_clip
+Rv0556	15	L	R	snp	CGC
+gpdA1	263	V	M	snp	ATG
+Rv0575c	116	Q	Q	syn	CAG
+yrbE2A	111	A	A	syn	GCG
+yrbE2A	160	L	L	syn	CTC
+mce2A	51	F	S	snp	TCC
+mce2C	370	P	L	snp	CTC
+mce2C	469	L	L	syn	CTG
+mce2D	-36	A	C	snp
+vapC4	1	left_clip
+vapC4	26	F	L	snp	TTG
+Rv0601c	9	G	G	syn	GGT
+Rv0613c	533	G	S	snp	AGC
+vapC30	85	T	T	syn	ACA
+secE1	78	T	T	syn	ACT
+rplK	21	N	K	snp	AAG
+Rv0658c	75	L	P	snp	CCC
+atsD	706	Y	H	snp	CAT
+fadE8	148	A	A	syn	GCG
+fadE8	180	T	T	syn	ACT
+mmpL5	922	R	R	syn	CGA
+mmpL5	948	I	V	snp	GTT
+rpsG	109	R	R	syn	CGA
+Rv0696	453	Y	C	snp	TGC
+Rv0697	-57	T	C	snp
+atsA	526	P	P	syn	CCA
+Rv0726c	90	A	T	snp	ACC
+PE_PGRS11	270	left_clip
+PE_PGRS11	405	S	S	syn	TCT
+phoR	172	P	L	snp	CTC
+Rv0767c	59	R	R	syn	CGA
+ptrBa	202	RTVYYTTVDAAWRPDTVWRYRLGSGESSERVYHEADDRFWLAVGRTRSNAYLLIAAGSSITSEVRYAHAADPTAQFSVVLPRRDGVEYSVEHAVIA	right_extension
+ptrBb	41	left_clip
+Rv0787	267	Y	H	snp	CAC
+pepC	139	L	R	snp	CGG
+purF	109	S	S	syn	TCG
+purM	63	G	G	syn	GGC
+pabC	145	I	M	snp	ATG
+Rv0825c	42	left_clip
+Rv0825c	-6	A	C	snp
+Rv0826	-75	A	C	snp
+kmtR	122	RHRLPRMSGKPINGEHNHAPVAPQVRGQTLGQ	right_extension
+kmtR	121	A	A	syn	GCA
+fadA	150	S	G	snp	GGC
+PE_PGRS15	607	QPG	right_extension
+fadE10	423	G	G	syn	GGT
+PPE13	435	-	P	ins
+Rv0881	115	G	R	snp	CGC
+Rv0890c	770	113	right_clip
+Rv0891c	37	V	G	snp	GGT
+echA6	68	A	D	snp	GAC
+Rv0907	23	left_clip
+PPE14	90	A	T	snp	ACG
+Rv0919	141	F	F	syn	TTC
+pstA1	305	4	right_clip
+pstS2	345	G	S	snp	AGC
+purN	72	P	H	snp	CAC
+purN	197	H	H	syn	CAC
+purH	-54	A	G	snp
+lprP	186	P	L	snp	CTC
+Rv0964c	124	P	T	snp	ACT
+Rv0966c	175	V	A	snp	GCG
+ctpV	395	T	T	syn	ACA
+Rv0970	210	V	V	syn	GTC
+PE_PGRS17	317	V	V	syn	GTC
+pepD	390	L	P	snp	CCG
+recF	245	I	T	snp	ACC
+gyrA	5	left_clip
+gyrA	21	E	Q	snp	CAG
+Rv0007	276	T	T	syn	ACG
+Rv0008c	145	1	right_clip
+Rv0012	233	C	R	snp	CGC
+pbpA	265	P	A	snp	GCG
+Rv0021c	-78	G	C	snp
+Rv0026	178	A	A	syn	GCG
+acpA	3	E	E	syn	GAA
+Rv0034	55	A	A	syn	GCG
+mtc28	133	P	P	syn	CCG
+leuS	893	A	A	syn	GCG
+ponA1	170	A	G	snp	GGT
+ponA1	631	-	P	ins
+dnaB	240	M	T	snp	ACG
+dnaB	552	R	G	snp	GGG
+Rv0064	457	G	D	snp	GAT
+Rv0064	733	N	D	snp	GAC
+Rv0068	214	V	L	snp	CTG
+Rv0083	501	V	M	snp	ATG
+PPE1	174	P	S	snp	TCC
+nrp	2000	V	V	syn	GTG
+Rv0102	182	H	Y	snp	TAC
+ctpB	5	left_clip
+ctpB	22	L	S	snp	TCG
+ctpI	1573	60	right_clip
+ctpI	1571	S	F	snp	TTC
+ctpI	1572	G	G	syn	GGG
+Rv0108c	-91	T	G	snp
+Rv0108c	-73	A	AC	ins
+gmhA	150	S	C	snp	TGC
+fusA2	562	N	S	snp	AGT
+mak	18	S	P	snp	CCG
+Rv0135c	82	V	I	snp	ATC
+Rv0143c	370	L	L	syn	TTG
+PE1	485	L	L	syn	TTG
+Rv0158	84	E	Q	snp	CAA
+PE3	14	T	A	snp	GCG
+PE3	250	V	V	syn	GTA
+adhE1	184	A	T	snp	ACC
+mce1C	322	D	G	snp	GGT
+mce1F	370	L	P	snp	CCG
+Rv0187	159	62	right_clip
+Rv0192	127	S	P	snp	CCG
+Rv0193c	417	K	E	snp	GAG
+Rv0194	74	M	T	snp	ACG
+Rv0195	72	A	A	syn	GCG
+Rv0197	749	14	right_clip
+Rv0218	316	C	R	snp	CGT
+echA1	16	V	V	syn	GTC
+Rv0223c	119	Y	Y	syn	TAT
+Rv0227c	52	D	G	snp	GGC
+nrdB	33	H	D	snp	GAT
+Rv0235c	311	R	H	snp	CAC
+aftD	360	P	P	syn	CCG
+aftD	636	P	P	syn	CCT
+Rv0259c	182	A	V	snp	GTG
+Rv0259c	-96	C	A	snp
+Rv0260c	232	A	A	syn	GCT
+Rv0260c	349	V	V	syn	GTA
+Rv0268c	51	L	L	syn	TTG
+fadE6	broken
+PPE3	419	1	del
+eccC3	214	P	R	snp	CGG
+eccC3	310	A	A	syn	GCA
+eccE3	217	N	D	snp	GAT
+PPE5	1092	left_clip
+PPE6	810	YNTGMANTGNINTGAFISGNHSNGLLWRGDNQGLIDLAIGVDIPEIPIVSVDVNIPIHIPITASFTDIVYSGLDLPPNTAVTVIFFGPVDIDPFTVPVIRITGPTPVVMVGGPTTAINIGATVVVDAINIPIIHIPATPGFGNSTGGLSSGFFNSGAGSASGFGNFGGAASGFMNLVSTTSGMSGFLNVGALGSGVANVGNTISGIYNVGTSDL	right_extension
+Rv0315	260	K	T	snp	ACG
+Rv0318c	223	G	A	snp	GCG
+Rv0323c	142	S	G	snp	GGT
+Rv0338c	621	A	V	snp	GTC
+iniC	102	A	A	syn	GCT
+lpqJ	152	E	E	syn	GAA
+dnaK	58	A	A	syn	GCG
+dnaK	422	A	A	syn	GCG
+PPE7	126	NSGFQNFGNLLSGWANLGNTVSGFYNTSMLDLATQALISGFGNHGARLSGILNNGSGP	right_extension
+PPE7	125	G	G	syn	GGG
+PPE8	2436	5	del
+Rv0376c	26	P	P	syn	CCG
+Rv0383c	-84	T	G	snp
+Rv0386	429	S	L	snp	TTG
+Rv0387c	-95	A	AC	ins
+PPE9	broken
+ndhA	406	L	L	syn	CTA
+Rv0395	80	V	A	snp	GCC
+mmpL1	846	F	V	snp	GTC
+pks6	615	R	G	snp	GGG
+pta	638	T	T	syn	ACG
+Rv0412c	132	S	S	syn	TCA
+thiG	75	S	C	snp	TGC
+Rv0420c	79	D	D	syn	GAT
+ctpH	689	M	V	snp	GTG
+Rv0443	79	R	G	snp	GGC
+Rv0443	110	G	G	syn	GGC
+mmpL4	97	L	L	syn	CTC
+mcr3	41	G	A	snp
+-	31852	G	C	snp
+-	32482	AC	A	del
+-	93460	C	A	snp
+-	180841	G	GA	ins
+-	290478	A	ACGGCCCGCATCGTCGCCGACCGTCACTGATGGGCCGGTTCCTCAGCGGCCCGCTGCG	ins
+-	310557	A	G	snp
+-	318469	C	T	snp
+-	351628	T	C	snp
+-	413390	C	T	snp
+-	519398	C	CCGTATCGTCGCCGACCGCTTGGGAGACCCGCGAGCGCGTGCCGTGGTGTTCT	ins
+-	820845	A	AG	ins
+-	996320	CGTGCCACCCCCTAG	C	del
+-	1163457	G	A	snp
+-	1163458	C	T	snp
+-	1163649	A	G	snp
+-	1163655	A	G	snp
+-	1163658	C	T	snp
+-	1163662	TTTTG	T	del
+-	1163676	C	G	snp
+-	1163679	G	A	snp
+-	1163681	C	T	snp
+-	1164216	G	C	snp
+-	1334674	TGTCC	T	del
+-	1459676	CT	C	del
+-	1583513	A	G	snp
+-	1583548	C	A	snp
+-	1642854	G	A	snp
+-	1658834	G	T	snp
+-	1888324	C	CCGG	ins
+-	2042965	AT	A	del
+-	2182565	T	C	snp
+-	2188239	A	G	snp
+-	2199706	T	C	snp
+-	2199799	GA	G	del
+-	2203940	A	AG	ins
+-	2332735	G	GCA	ins
+-	2372685	C	T	snp
+-	2403275	C	T	snp
+-	2477544	C	T	snp
+-	2555887	C	T	snp
+-	2575246	C	G	snp
+-	2666697	T	C	snp
+-	2682695	T	C	snp
+-	2776742	C	G	snp
+-	2798497	A	G	snp
+-	2864179	AT	A	del
+-	2864407	A	G	snp
+-	3128560	TG	T	del
+-	3210920	A	G	snp
+-	3314899	A	C	snp
+-	3394702	G	C	snp
+-	3425069	C	G	snp
+-	3453045	G	A	snp
+-	3479439	T	G	snp
+-	3557270	TG	T	del
+-	3630137	A	G	snp
+-	3908178	C	G	snp
+-	3943894	C	A	snp
+-	3943911	A	C	snp
+-	3943942	A	G	snp
+-	3943947	C	G	snp
+-	3943968	T	G	snp
+-	3943975	T	G	snp
+-	3943986	C	G	snp
+-	3944006	G	C	snp
+-	3944016	C	G	snp
+-	3944022	G	GC	ins
+-	4084014	GC	G	del
+-	4277693	G	A	snp
+-	4377488	A	G	snp
+-	4379663	C	G	snp
+-	4400691	G	A	snp
