@@ -12,9 +12,10 @@ drugs = ['Isoniazid', 'Kanamycin', 'Ethambutol', 'Capreomycin',
 'Rifampicin', 'Amikacin', 'Streptomycin', 'Prothionamide', 
 'Ethionamide']
 first_line_drugs = ['Isoniazid', 'Ethambutol', 'Pyrazinamide', 'Rifampicin', 'Streptomycin']
-source = '/export/data/kchukreev/HMM_031121/translation_leaves_190221_filtered_constant_upstream_intergenic_v2/' #path to folder with domains likelihoods
+#source = '/export/data/kchukreev/HMM_031121/translation_leaves_190221_filtered_constant_upstream_intergenic_v2/' #path to folder with domains likelihoods
+source = '/export/data/kchukreev/HMM_23072022/translation_leaves_190221_filtered_constant_upstream_intergenic_fixed/'
 phenofolder = '/export/data/kchukreev/pheno_combined/' #path to files with phenotypes
-gene_list = os.listdir('./output_test') #list of .csv files with domains likelihoods
+genes = os.listdir('./output_test') #list of .csv files with domains likelihoods
 
 #generate domain features
 def generate_feature(my_drug, additional_samples, input_folder, output_folder):
