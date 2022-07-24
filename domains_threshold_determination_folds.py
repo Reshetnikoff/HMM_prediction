@@ -6,7 +6,7 @@ import os
 from sklearn.model_selection import StratifiedKFold
 from joblib import Parallel, delayed
 
-gene_list = os.listdir('./output_test') #list of .csv files with domains likelihoods
+genes = os.listdir('./output_test') #list of .csv files with domains likelihoods
 drugs = ['Isoniazid', 'Kanamycin', 'Ethambutol', 'Capreomycin', 'Ciprofloxacin', 
 'Moxifloxacin', 'Ofloxacin', 'Pyrazinamide', 'Rifampicin', 'Amikacin', 'Streptomycin', 
 'Prothionamide', 'Ethionamide']
@@ -85,7 +85,7 @@ def stratified_split(my_drug, outfolder):
     for train_index, test_index in skf.split(X, y):
         train_indices.append(train_index)
         X_train, X_test = X[train_index], X[test_index]
-        with open(outfolder + my_drug + '.' + str(c) + '_fold_split.txt', 'w') as logfile:
+        with open(outfolder + '.' + str(c) + '_fold_split.txt', 'w') as logfile:
             logfile.write('train\n')
             for sample in X_train:
                 logfile.write(sample + '\n')
