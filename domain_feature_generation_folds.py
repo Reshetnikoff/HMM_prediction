@@ -4,6 +4,7 @@ import sys
 from os.path import exists
 import os
 from joblib import Parallel, delayed
+from config import threshold_path, bin_path
 
 #input_folder = '/export/data/kchukreev/domains_thresholds_max_dif_2/'
 #output_folder = '/export/data/kchukreev/domains_features_max_dif_2/'
@@ -76,8 +77,14 @@ def generate_feature(my_drug, additional_samples, input_folder, output_folder):
                         output.write(domain + '\tchanged\n')
 
 if __name__ == "__main__":
-    input_folder = sys.argv[1] #folder with thresholds
-    output_folder = sys.argv[2]
+    input_folder = threshold_path #folder with thresholds
+    output_folder = bin_path
+
+    try:
+        os.makedirs(output_folder)
+    except FileExistsError:
+        pass
+
     with_additional_samples = False #True if we consider samples susceptible to first-line drugs to be also susceptible to second-line drugs
     additional_samples = []
     if with_additional_samples:

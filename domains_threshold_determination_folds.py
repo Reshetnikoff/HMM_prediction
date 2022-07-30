@@ -5,6 +5,7 @@ from os.path import exists
 import os
 from sklearn.model_selection import StratifiedKFold
 from joblib import Parallel, delayed
+from config import threshold_path, output_path 
 
 genes = os.listdir('./output_test') #list of .csv files with domains likelihoods
 drugs = ['Isoniazid', 'Kanamycin', 'Ethambutol', 'Capreomycin', 'Ciprofloxacin', 
@@ -122,8 +123,14 @@ def process_drug(my_drug, infolder, outfolder):
         output.close()
     
 if __name__ == "__main__":
-    infolder = sys.argv[1] #folder with domain likelihoods (should have subfolders for each drug)
-    outfolder = sys.argv[2] #folder with thresholds 
+    infolder = output_path #folder with domain likelihoods (should have subfolders for each drug)
+    outfolder = threshold_path #folder with threshold
+
+    try:
+        os.makedirs(outfolder)
+    except FileExistsError:
+        pass
+
     os.makedirs(outfolder, exist_ok=True)
     tasks = Parallel(n_jobs=13)(delayed(process_drug)(my_drug, infolder + my_drug, 
                                                       outfolder + my_drug) for my_drug in drugs)
