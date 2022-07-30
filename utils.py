@@ -134,12 +134,12 @@ def change_seq(seq, data, diff=0):
 
 def get_annotation(file):
     annotation = pd.read_csv(file, sep='\t', header=None, index_col=None)
-    annotation = annotation[annotation[2] == 'Gene']
+    annotation = annotation[annotation[2] == 'CDS']
     annotation.drop(columns=[0, 1, 2, 5, 7], inplace=True)
 
     annotation[10] = ([x.split(" ")[-1] for x in annotation[8]])
 
-    temp = ([delete_last_space(x.split(";")[0]) for x in annotation[8]])
+    temp = ([delete_last_space(x.split(";")[2]) for x in annotation[8]])
     annotation[5] = ([str(x).split(" ")[-1] for x in temp])
 
     bi_genes = pd.DataFrame()
