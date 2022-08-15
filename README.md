@@ -1,6 +1,6 @@
 # PFAM domains likelihood prediction and strong changes in domains detection
 
-This repository contains code to obtain PFAM domains likelihoods based on lists of mutations observed in * *Mycobacterium tuberculosis* * (MTB) isolates genomes. In addition, domains likelihoods can be easily binarized to point out protein domains that have been altered the most.
+This repository contains code to obtain PFAM domains likelihoods based on lists of mutations observed in  *Mycobacterium tuberculosis* (MTB) isolates genomes. In addition, domains likelihoods can be easily binarized to point out protein domains that have been altered the most.
 
 ## Usage
 
