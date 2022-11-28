@@ -6,17 +6,17 @@ import os
 from joblib import Parallel, delayed
 from config import threshold_path, bin_path
 
-#input_folder = '/export/data/kchukreev/domains_thresholds_max_dif_2/'
-#output_folder = '/export/data/kchukreev/domains_features_max_dif_2/'
+# input_folder = './domains_thresholds_max_dif_2/'
+# output_folder = './domains_features_max_dif_2/'
 drugs = ['Isoniazid', 'Kanamycin', 'Ethambutol', 'Capreomycin', 
 'Ciprofloxacin', 'Moxifloxacin', 'Ofloxacin', 'Pyrazinamide', 
 'Rifampicin', 'Amikacin', 'Streptomycin', 'Prothionamide', 
 'Ethionamide']
 first_line_drugs = ['Isoniazid', 'Ethambutol', 'Pyrazinamide', 'Rifampicin', 'Streptomycin']
 #source = '/export/data/kchukreev/HMM_031121/translation_leaves_190221_filtered_constant_upstream_intergenic_v2/' #path to folder with domains likelihoods
-source = '/export/data/kchukreev/HMM_23072022/translation_leaves_190221_filtered_constant_upstream_intergenic_fixed/'
-phenofolder = '/export/data/kchukreev/pheno_combined/' #path to files with phenotypes
-genes = os.listdir('./output_test') #list of .csv files with domains likelihoods
+source = '../db/annotated_data'
+phenofolder = '../db/pheno' #path to files with phenotypes
+genes = os.listdir('./HMM_output') #list of .csv files with domains likelihoods
 
 #generate domain features
 def generate_feature(my_drug, additional_samples, input_folder, output_folder):
@@ -77,9 +77,8 @@ def generate_feature(my_drug, additional_samples, input_folder, output_folder):
                         output.write(domain + '\tchanged\n')
 
 if __name__ == "__main__":
-    input_folder = threshold_path #folder with thresholds
+    input_folder = threshold_path
     output_folder = bin_path
-
     try:
         os.makedirs(output_folder)
     except FileExistsError:

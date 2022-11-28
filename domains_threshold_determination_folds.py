@@ -7,13 +7,13 @@ from sklearn.model_selection import StratifiedKFold
 from joblib import Parallel, delayed
 from config import threshold_path, output_path 
 
-genes = os.listdir('./output_test') #list of .csv files with domains likelihoods
+genes = os.listdir('./output_HMM') #list of .csv files with domains likelihoods
 drugs = ['Isoniazid', 'Kanamycin', 'Ethambutol', 'Capreomycin', 'Ciprofloxacin', 
 'Moxifloxacin', 'Ofloxacin', 'Pyrazinamide', 'Rifampicin', 'Amikacin', 'Streptomycin', 
 'Prothionamide', 'Ethionamide']
 first_line_drugs = ['Isoniazid', 'Ethambutol', 'Pyrazinamide', 'Rifampicin', 'Streptomycin']
-phenofolder='/export/data/kchukreev/pheno_combined/' #path to files with phenotypes
-source = '/export/data/kchukreev/translation_leaves_190221_filtered_constant_upstream_intergenic/' #path to translations
+phenofolder='../db/pheno' #path to files with phenotypes
+source = '../db/annotated_data' #path to translations
 
 #we get dictionary with domain likelihoods, domain name, dictionary with broken genes of each isolate, 
 #list of isolates in the training sample and cooresponding list of phenotypes, and return likelihood threshold
@@ -123,8 +123,8 @@ def process_drug(my_drug, infolder, outfolder):
         output.close()
     
 if __name__ == "__main__":
-    infolder = output_path #folder with domain likelihoods (should have subfolders for each drug)
-    outfolder = threshold_path #folder with threshold
+    infolder = './HMM_output/' #folder with domain likelihoods (should have subfolders for each drug)
+    outfolder = './domains_thresholds_max_dif_2/' #folder with threshold
 
     try:
         os.makedirs(outfolder)

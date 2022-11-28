@@ -1,3 +1,4 @@
+import sys, os
 import sys
 import os
 import time
@@ -19,6 +20,8 @@ from config import NUM_THREADS
 if __name__ == "__main__":
     start_time = time.time()
 
+    # Get input_file
+    samples_list = os.listdir(output_path)
     drug = sys.argv[1]
     data_path += f'/{drug}'
     output_path += f'/{drug}'
@@ -43,7 +46,7 @@ if __name__ == "__main__":
     reference = get_reference(file_reference)
     pfam = get_pfam(pfam_file)
 
-    domains = ['PF00204', 'PF00986', 'PF01751', 'PF02518']
+    domains = np.unique([x.split("_")[0] for x in pfam['domain']])
 
     # Get HMM models block
     HMMmodels = []
@@ -63,15 +66,21 @@ if __name__ == "__main__":
 
             sep='\t', header=None, index_col=None,
             names=['gene', 'pos', "ind1", "ind2", "act"],
+            keep_default_na=False, na_values=[''], uscols=[0, 1, 2, 3, 4]
             keep_default_na=False, na_values=[''], usecols=[0, 1, 2, 3, 4]
         )
         data.append(temp_data)
     samples_data = drug(samples=samples_list, data=data)
 
     # Main block for prediction
+    procs = []
+    for batch in get_batches(genes, NUM_THREADS):
+        proc = Process(target=get_score, args=(batch, pfam, annotation, reference,
+                                               samples_data, HMMmodels, output_path))
+        procs.append(proc)
+        proc.start()
 
-    gene = 'gyrB'
-    get_score([gene], pfam, annotation, reference,
-                samples_data, HMMmodels, output_path)
-    print(f"List of samples: {data_path} is processed and write in {output_path}")
+    for proc in procs:
+        proc.join()
+    print(f"List of samples: {data_path}/{sample_file} is processed and write in ./HMM_output/{samples_file}")
     print("--- %s seconds ---" % (time.time() - start_time))
